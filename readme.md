@@ -18,3 +18,6 @@ Time is shown in seconds
 |Rabin-Karp    |Text 2|valid    |30.01080509996973    |
 |Rabin-Karp    |Text 1|made up  |36.175092899939045   |
 |Rabin-Karp    |Text 2|made up  |52.79901509988122    |
+
+### Conclusion
+From test results we can see that Boyer-Moore Algorithm perfomed the best for both texts with both finable pattern as well as made-up pattern. So, Boyer-Moore Algorithm was the fastest in general.
