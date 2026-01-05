@@ -143,15 +143,15 @@ if __name__ == "__main__":
     pattern_fake = "EzXGgr4kD76HnFwyTE"
     print("download complete")
 
-    print(f"Алгоритм КМП, стаття1, рядок дійсний:            {timeit.timeit('kmp_search(text1, pattern1)', number=10000, globals=globals())}")
-    print(f"Алгоритм КМП, стаття2, рядок дійсний:            {timeit.timeit('kmp_search(text2, pattern2)', number=10000, globals=globals())}")
-    print(f"Алгоритм КМП, стаття1, рядок НЕдійсний:          {timeit.timeit('kmp_search(text1, pattern_fake)', number=10000, globals=globals())}")
-    print(f"Алгоритм КМП, стаття2, рядок НЕдійсний:          {timeit.timeit('kmp_search(text2, pattern_fake)', number=10000, globals=globals())}")
-
     print(f"Алгоритм Боєра-Мура, стаття1, рядок дійсний:     {timeit.timeit('boyer_moore_search(text1, pattern1)', number=10000, globals=globals())}")
     print(f"Алгоритм Боєра-Мура, стаття2, рядок дійсний:     {timeit.timeit('boyer_moore_search(text2, pattern2)', number=10000, globals=globals())}")
     print(f"Алгоритм Боєра-Мура, стаття1, рядок НЕдійсний:   {timeit.timeit('boyer_moore_search(text1, pattern_fake)', number=10000, globals=globals())}")
     print(f"Алгоритм Боєра-Мура, стаття2, рядок НЕдійсний:   {timeit.timeit('boyer_moore_search(text2, pattern_fake)', number=10000, globals=globals())}")
+
+    print(f"Алгоритм КМП, стаття1, рядок дійсний:            {timeit.timeit('kmp_search(text1, pattern1)', number=10000, globals=globals())}")
+    print(f"Алгоритм КМП, стаття2, рядок дійсний:            {timeit.timeit('kmp_search(text2, pattern2)', number=10000, globals=globals())}")
+    print(f"Алгоритм КМП, стаття1, рядок НЕдійсний:          {timeit.timeit('kmp_search(text1, pattern_fake)', number=10000, globals=globals())}")
+    print(f"Алгоритм КМП, стаття2, рядок НЕдійсний:          {timeit.timeit('kmp_search(text2, pattern_fake)', number=10000, globals=globals())}")
 
     print(f"Алгоритм Рабіна-Карпа, стаття1, рядок дійсний:   {timeit.timeit('rabin_karp_search(text1, pattern1)', number=10000, globals=globals())}")
     print(f"Алгоритм Рабіна-Карпа, стаття2, рядок дійсний:   {timeit.timeit('rabin_karp_search(text2, pattern2)', number=10000, globals=globals())}")
